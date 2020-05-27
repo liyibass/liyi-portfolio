@@ -1,0 +1,24 @@
+@import "../../styles/base/variable.scss";
+.motto-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: table;
+  z-index: -1;
+  // background-color: $mainDark;
+
+  background-image: url("../../images/motto-bg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motto-code {
+  font-size: 2.3rem;
+  z-index: 10;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+}

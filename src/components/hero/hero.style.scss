@@ -1,0 +1,72 @@
+@import "../../styles/base/variable.scss";
+@import "../../styles/base/responsiveMixin.scss";
+
+.hero-section {
+  // position: absolute;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+
+  // @include atLarge {
+  //   width: 100%;
+  //   height: 100vh;
+  // }
+
+  &__bg {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/hero-section__bg.png");
+    background-size: cover;
+    transition: all 0.5s ease-in;
+    @include atLarge {
+    }
+  }
+
+  &__text-content {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    top: 35%;
+    background-color: rgba(255, 255, 255, 0.6);
+    // color: red;
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding: 15px;
+    }
+
+    @include atMedium {
+      // color: orange;
+      width: 400px;
+      top: 14%;
+      right: 10%;
+      margin-top: auto;
+      margin-buttom: auto;
+      h1 {
+        font-size: 80px;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    // @include atLarge {
+    //   color: yellow;
+    //   top: 35%;
+    // }
+  }
+}

@@ -1,0 +1,32 @@
+.connect-section {
+  font-size: 2rem;
+  margin-top: 20px;
+
+  //   background-color: black;
+}
+
+.connect-links {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.connect-icon {
+  &--facebook {
+    color: #3b5998;
+  }
+  &--twitter {
+    color: #00aced;
+  }
+  &--google {
+    color: #dd4b39;
+  }
+  &--instagram {
+    color: #517fa4;
+  }
+  &--youtube {
+    color: #bb0000;
+  }
+}

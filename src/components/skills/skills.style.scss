@@ -1,0 +1,80 @@
+@import "../../styles/base/variable.scss";
+@import "../../styles/base/overall.scss";
+@import "../../styles/base/responsiveMixin.scss";
+.skills-session {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(41, 41, 41, 0.82),
+      rgba(46, 42, 111, 0.53)
+    ),
+    url("../../images/skills-bg.jpeg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  color: $mainWhite;
+
+  .skill-and-tools {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .develop-tools {
+      width: 80%;
+      height: 100%;
+      right: 10px;
+      // margin: auto;
+
+      @include atSmall {
+        width: 50%;
+        rignt: 300px;
+      }
+    }
+
+    .media-tools {
+      width: 50%;
+      height: 100%;
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      li {
+        list-style-type: none;
+        font-size: 1.2rem;
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  .skillContainer {
+    padding-top: 0;
+    padding-left: 20px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    @include atSmall {
+      padding-left: 30px;
+    }
+  }
+
+  .skillRowContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+}
