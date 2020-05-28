@@ -14,7 +14,6 @@ import Header from "../../components/header/header.component";
 function Homepage() {
   return (
     <div className="home-page">
-      <Header />
       <Hero />
       <Motto />
       <a id="about-section" className="anchor" href="/">
