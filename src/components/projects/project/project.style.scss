@@ -1,9 +1,13 @@
 @import "../../../styles/base/responsiveMixin.scss";
+@import "../../../styles/base/variable.scss";
+
 .project {
   background-color: rgba(gray, 0.6);
+  border: 5px rgba($mainDark, 0.2) solid;
 
   margin: 10px;
   padding: 0;
+  max-width: 830px;
 
   flex: 100%;
   overflow: hidden;
@@ -27,5 +31,18 @@
       transform: scale(1.2) rotate(5deg);
       overflow: hidden;
     }
+  }
+}
+
+.project-content {
+  display: none;
+  position: absolute;
+  z-index: 10;
+
+  background-color: yellow;
+  &text {
+    position: absolute;
+    z-index: 10;
+    color: red;
   }
 }

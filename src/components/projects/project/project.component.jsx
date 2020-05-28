@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./project.style.scss";
-import projectImage from "../../../images/projects/1.jpeg";
+import tempImage from "../../../images/projects/1.jpeg";
 
-function Project() {
+function Project({ projectName, projectImage, projectUrl }) {
   return (
     <div className="project">
-      {/* <h1>Project</h1> */}
-      <img src={projectImage} alt="" />
+      <a href={projectUrl}>
+        <img src={projectImage} alt="" />
+        <div className="project-content">
+          <div className="project-content-text">
+            <h1>{projectName}</h1>
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
