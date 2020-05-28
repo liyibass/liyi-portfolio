@@ -4,7 +4,7 @@
 .header {
   background: $mainDark;
   position: fixed;
-  z-index: 1;
+
   opacity: 0.8;
 
   width: 100%;
@@ -24,10 +24,11 @@
 
   .option {
     // margin-right: 20px;
-    z-index: 10;
-    padding: 10px 15px;
 
-    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 9;
+    cursor: default;
 
     &:hover {
       transform: scale(1.1);
@@ -35,40 +36,38 @@
       transition: all 0.2s ease-out;
     }
   }
-  .options {
-    // background-color: red;
-
-    color: white;
-    width: 50%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    // 置右
-  }
 
   // ==========
 
   .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+    width: 50%;
     margin-right: 0px;
     padding-top: 100px;
     text-align: center;
-    height: 250px;
+    height: 280px;
 
     position: relative;
-    opacity: 0;
+    z-index: 10;
+    opacity: 1;
+
+    right: -200px;
+
+    // cursor: pointer;
+
     transition: all 0.3s ease-out;
-    z-index: -10;
+
     /*z-index要搭配relative才可以使用*/
     transform: scale(1.2);
     padding-bottom: 30px;
 
-    &--is-expanded {
-      background-color: rgba($mainDark, 0.8);
-    }
-
-    @include atSmall {
+    @include atMedium {
+      right: 0px;
       flex-direction: row;
       justify-content: flex-end;
       height: 100%;
@@ -76,13 +75,18 @@
       padding-top: 0;
       padding-bottom: 0;
       opacity: 1;
-      z-index: 10;
+      z-index: 2;
       transform: scale(1);
+    }
+    &--is-expanded {
+      background-color: rgba($mainDark, 0.8);
     }
 
     &--is-visible {
+      right: 0px;
       opacity: 1;
-      z-index: 10;
+      z-index: 2;
+
       transform: scale(1);
     }
   }
@@ -130,19 +134,19 @@
     }
 
     &--close-x {
-      .site-header__menu-icon__top {
+      .header__menu-icon__top {
         transform: rotate(45deg) scaleX(1.25) translateY(-1px);
       }
 
-      .site-header__menu-icon__bottom {
+      .header__menu-icon__bottom {
         transform: rotate(-45deg) scaleX(1.25);
       }
-      .site-header__menu-icon__middle {
+      .header__menu-icon__middle {
         opacity: 0;
       }
     }
 
-    @mixin atMedium {
+    @include atMedium {
       display: none;
     }
   }

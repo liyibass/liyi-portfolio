@@ -10,22 +10,35 @@
   padding: none;
   padding-top: 2px;
   transform: scale(1);
-  @include atSmall {
-    margin: 20px;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-  }
 
   &-name {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 0;
     padding: none;
   }
 
   &-logo {
     margin: none;
+  }
+
+  @include atSmall {
+    width: 80px;
+    height: 100px;
+    margin: 20px;
+
+    &-name {
+      font-size: 18px;
+      margin-bottom: 0;
+      padding: none;
+    }
+
+    &-logo {
+      margin: none;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
   }
 }

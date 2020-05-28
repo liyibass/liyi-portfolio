@@ -7,7 +7,7 @@ function Skill({ skillName, skillIcon }) {
     <div className="skill">
       <h3 className="skill-name">{skillName}</h3>
 
-      <FontAwesomeIcon className="skill-logo" icon={skillIcon} size="4x" />
+      <FontAwesomeIcon className="skill-logo" icon={skillIcon} size="3x" />
     </div>
   );
 }

@@ -4,9 +4,9 @@ import Project from "./project/project.component";
 function Projects() {
   return (
     <div className="projects-section section">
-      <h1 className="section-title">Project</h1>
+      <h1 className="section-title section-title-dark">Project</h1>
       <div className="inner-width ">
-        <div className="projects-container row">
+        <div className="projects-container ">
           <Project />
           <Project />
           <Project />

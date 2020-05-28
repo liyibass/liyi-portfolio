@@ -35,10 +35,10 @@ function Skills() {
   ];
 
   return (
-    <div className="section skills-session ">
+    <div className="section skills-section ">
       <h1 className="section-title">Skill & Tools</h1>
       <div className="section-wrapper">
-        <div className="skill-and-tools">
+        <div className="skill-tools">
           <div className="develop-tools">
             <h2>Develop</h2>
 
@@ -53,23 +53,23 @@ function Skills() {
                 );
               })}
             </div>
-
-            <div className="skillRollContainer"></div>
           </div>
 
-          <div className="media-tools">
-            <h2>Full-Stack</h2>
+          <div className="other-tools">
+            <div className="full-stack-media-container">
+              <div className="skillRowContainer">
+                <h2>Full-Stack</h2>
+                {fullStackSkills.map((skill) => {
+                  return <li key={skill.id}>{skill.name}</li>;
+                })}
+              </div>
 
-            <div className="skillRowContainer">
-              {fullStackSkills.map((skill) => {
-                return <li key={skill.id}>{skill.name}</li>;
-              })}
-            </div>
-            <h2>Media</h2>
-            <div className="skillRowContainer">
-              {mediaSkills.map((skill) => {
-                return <li key={skill.id}>{skill.name}</li>;
-              })}
+              <div className="skillRowContainer">
+                <h2>Media</h2>
+                {mediaSkills.map((skill) => {
+                  return <li key={skill.id}>{skill.name}</li>;
+                })}
+              </div>
             </div>
           </div>
         </div>

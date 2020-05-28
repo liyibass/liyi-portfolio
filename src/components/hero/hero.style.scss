@@ -23,6 +23,15 @@
     @include atLarge {
     }
   }
+  &-2__bg {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/hero2.png");
+    background-size: cover;
+    transition: all 0.5s ease-in;
+    @include atLarge {
+    }
+  }
 
   &__text-content {
     position: absolute;
@@ -31,12 +40,18 @@
     top: 35%;
     background-color: rgba(255, 255, 255, 0.6);
     // color: red;
+
     h1 {
       font-size: 2.2rem;
+      color: $mainDarkWord;
     }
 
     h2 {
       font-size: 1.8rem;
+    }
+    h3 {
+      font-size: 40px;
+      color: $mainDarkWord;
     }
 
     p {
@@ -57,6 +72,11 @@
 
       h2 {
         font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 50px;
+        color: $mainDarkWord;
       }
 
       p {

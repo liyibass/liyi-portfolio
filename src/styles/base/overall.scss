@@ -1,3 +1,5 @@
+@import "../../styles/base/responsiveMixin.scss";
+@import "./variable.scss";
 * {
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
@@ -6,21 +8,42 @@ a {
   text-decoration: none;
   color: white;
 }
+.anchor {
+  display: block;
+  position: relative;
+  top: 0px;
+  visibility: hidden;
 
-.row {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  @include atMedium {
+    top: -50px;
+  }
 }
+
+// .row {
+//   height: 100%;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: space-around;
+// }
 
 .section {
   width: 100vw;
-  height: 100%;
+
+  &-wrapper {
+    width: 80vw;
+
+    @include atSuperLarge {
+      width: 1500px;
+      // background-color: red;
+    }
+  }
 }
 .section-title {
   font-size: 3rem;
+  &-dark {
+    color: $mainDarkWord;
+  }
 }
 
 .inner-width {

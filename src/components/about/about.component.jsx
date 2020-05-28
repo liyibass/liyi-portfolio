@@ -5,10 +5,10 @@ import "../../styles/base/overall.scss";
 function About() {
   return (
     <div className="section about-section ">
-      <div className="inner-width about-section-wrapper">
+      <div className="inner-width section-wrapper">
         <div className="about-section-row">
           <div className="about-info">
-            <h1 className="section-title">About Liyi</h1>
+            <h1 className="section-title  section-title-dark">About Liyi</h1>
             <h2>Front end developer</h2>
             <p>Bridge communication gap between designers and developers</p>
             <p>Create responsive websites that work on multiple devices</p>
