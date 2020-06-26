@@ -1,13 +1,34 @@
 import beachResort from "./projectImages/beachResort.jpg";
-import bootstrap01 from "./projectImages/bootstrap01.jpg";
+import bootstrap01 from "./projectImages/bootstrap01NEW.jpg";
 import simpleTodoApp from "./projectImages/simpleTodoApp.jpg";
 import bootstrap02 from "./projectImages/bootstrap02.jpg";
 import bootstrap03 from "./projectImages/bootstrap03.jpg";
 import travelSite from "./projectImages/travelSite.jpg";
 import easyDrumPad from "./projectImages/easyDrumPad.jpg";
 import easyWeatherApp from "./projectImages/easyWeatherApp.jpg";
+import webDesign from "./projectImages/design/WebDesign.jpg";
+import homeDesign from "./projectImages/homeDesign.jpg";
+import drawStrawGame from "./projectImages/drawStrawGame.jpg";
 
 const projectList = [
+  {
+    id: "11",
+    name: "Draw-Straw Game",
+    image: drawStrawGame,
+    webUrl: "https://draw-straw-game.web.app",
+  },
+  {
+    id: "9",
+    name: "Si-Wei Design",
+    image: webDesign,
+    webUrl: "https://design-web.web.app",
+  },
+  {
+    id: "10",
+    name: "Bade Design",
+    image: homeDesign,
+    webUrl: "https://home-design.firebaseapp.com",
+  },
   {
     id: "1",
     name: "beach-resort",
@@ -46,15 +67,15 @@ const projectList = [
   },
   {
     id: "7",
-    name: "easy weather app",
-    image: easyWeatherApp,
-    webUrl: "https://easy-weather-app.firebaseapp.com",
-  },
-  {
-    id: "8",
     name: "easy drumpad",
     image: easyDrumPad,
     webUrl: "https://easy-drumpad.firebaseapp.com",
+  },
+  {
+    id: "8",
+    name: "easy weather app",
+    image: easyWeatherApp,
+    webUrl: "https://easy-weather-app.firebaseapp.com",
   },
 ];
 export default projectList;
