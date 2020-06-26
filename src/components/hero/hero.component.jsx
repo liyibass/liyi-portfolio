@@ -5,7 +5,7 @@ import "../../styles/effect/fadein.scss";
 
 function Hero() {
   return (
-    <div className="hero-section section">
+    <div className="hero-section section " id="start">
       <div className="hero-section__bg fade-in"></div>
       <div className="hero-section--all">
         <div className="hero-section__text-content">

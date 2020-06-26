@@ -12,9 +12,9 @@ function Header({ currentUser }) {
 
   return (
     <div className="header">
-      <Link className="logo-container" to="/">
+      <a className="logo-container" href="#start">
         <img src={logo} alt="logo" />
-      </Link>
+      </a>
       <div className="options">
         <a href="#about-section" className="option">
           About
