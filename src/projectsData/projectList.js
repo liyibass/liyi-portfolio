@@ -9,6 +9,8 @@ import easyWeatherApp from "./projectImages/easyWeatherApp.jpg";
 import webDesign from "./projectImages/design/WebDesign.jpg";
 import homeDesign from "./projectImages/homeDesign.jpg";
 import drawStrawGame from "./projectImages/drawStrawGame.jpg";
+import webCart from "./projectImages/webCart.jpg";
+import SocketIoChatApp from "./projectImages/SocketIoChatApp.jpg";
 
 const projectList = [
   {
@@ -30,10 +32,22 @@ const projectList = [
     webUrl: "https://home-design.firebaseapp.com",
   },
   {
+    id: "13",
+    name: "SocketIoChatApp",
+    image: SocketIoChatApp,
+    webUrl: "https://liyi-nodechat-app-client.web.app",
+  },
+  {
     id: "1",
     name: "beach-resort",
     image: beachResort,
     webUrl: "https://liyi-beach-resort.herokuapp.com/",
+  },
+  {
+    id: "12",
+    name: "web-cart App",
+    image: webCart,
+    webUrl: "https://web-cart.web.app/shop",
   },
   {
     id: "2",
@@ -41,6 +55,7 @@ const projectList = [
     image: bootstrap01,
     webUrl: "https://liyiproject-bab2d.firebaseapp.com",
   },
+
   {
     id: "3",
     name: "simple Todo App",
