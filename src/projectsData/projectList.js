@@ -11,8 +11,15 @@ import homeDesign from "./projectImages/homeDesign.jpg";
 import drawStrawGame from "./projectImages/drawStrawGame.jpg";
 import webCart from "./projectImages/webCart.jpg";
 import SocketIoChatApp from "./projectImages/SocketIoChatApp.jpg";
+import webStore from "./projectImages/webStore.jpg";
 
 const projectList = [
+  {
+    id: "14",
+    name: "Web-Store",
+    image: webStore,
+    webUrl: "https://liyi-webstore.web.app",
+  },
   {
     id: "11",
     name: "Draw-Straw Game",
