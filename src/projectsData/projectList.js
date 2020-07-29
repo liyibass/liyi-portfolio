@@ -12,8 +12,15 @@ import drawStrawGame from "./projectImages/drawStrawGame.jpg";
 import webCart from "./projectImages/webCart.jpg";
 import SocketIoChatApp from "./projectImages/SocketIoChatApp.jpg";
 import webStore from "./projectImages/webStore.jpg";
+import sortingAlgorithm from "./projectImages/sortingAlgorithm.jpg";
 
 const projectList = [
+  {
+    id: "15",
+    name: "Sorting-Algorithm",
+    image: sortingAlgorithm,
+    webUrl: "https://liyi-sorting-algorithm.web.app/",
+  },
   {
     id: "14",
     name: "Web-Store",
