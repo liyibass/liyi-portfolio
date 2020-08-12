@@ -13,8 +13,15 @@ import webCart from "./projectImages/webCart.jpg";
 import SocketIoChatApp from "./projectImages/SocketIoChatApp.jpg";
 import webStore from "./projectImages/webStore.jpg";
 import sortingAlgorithm from "./projectImages/sortingAlgorithm.jpg";
+import snakeGame from "./projectImages/snakeGame.jpg";
 
 const projectList = [
+  {
+    id: "16",
+    name: "Sorting-Algorithm",
+    image: snakeGame,
+    webUrl: "https://liyi-snake-game.web.app",
+  },
   {
     id: "15",
     name: "Sorting-Algorithm",
